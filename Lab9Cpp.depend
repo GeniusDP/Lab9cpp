@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1608665411 source:e:\luda\desktop\lab9cpp\mystring.cpp
+	<string>
+	<iostream>
+	<iomanip>
+
+1608661189 source:e:\luda\desktop\lab9cpp\main.cpp
+	<iostream>
+	<string>
+	"mystring.h"
+
+1608665551 e:\luda\desktop\lab9cpp\mystring.h
+	<string>
+
