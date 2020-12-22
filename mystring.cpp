@@ -13,6 +13,7 @@ const int MAXLEN=1000;
     void printpositions(int* arr, int len);
     void quickSort(int* arr, int left, int right);
     void printCharsOfString(string s);
+    void mySwap(int& x, int& y);
 //PREIMAGES OF FUNCTIONS
 //#############################
 
@@ -49,16 +50,19 @@ void solve(string s){
         if(cnt[i]==1){
             positions[lenPos++]=s.find(i)+1;
         }
+    //output
     printCharsOfString(s);
     quickSort(positions, 0, lenPos-1);
     printpositions(positions, lenPos);
 }
 
 void printCharsOfString(string s){
+    //printing charcters
     cout << "Infromation about the string: " << endl;
     for(int i=0; i<s.length(); i++)
         cout << setw(4) << s[i];
     cout << endl;
+    //printing positions
     for(int i=0; i<s.length(); i++)
         cout << setw(4) << 1 + i;
     cout << endl;
@@ -76,6 +80,7 @@ void printpositions(int* arr, int len){
     else cout << "There are any such characters!" << endl;
 }
 
+//swapping 2 variables
 void mySwap(int& x, int& y){
     x^=y^=x^=y;
 }

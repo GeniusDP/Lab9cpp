@@ -20,5 +20,10 @@ void printpositions(int* arr, int len);
 //to sort the array
 void quickSort(int* arr, int* right);
 
-//output
+//output function
+//used to make output more convenient
+//to read
 void printCharsOfString(string s);
+
+//swap, using bit operators
+void mySwap(int& x, int& y);
